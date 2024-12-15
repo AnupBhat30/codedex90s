@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Codédex - Your Coding Adventure Awaits!</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=Press+Start+2P&family=Vesper+Libre:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+          background: url("assets/codedex.png") repeat; /* Colorful patterned background */
+        font-family: "Pixelify Sans", cursive, sans-serif; /* Updated to Pixelify font */
+        color: #ff00ff; /* Bright text color */
+        backdrop-filter: blur(1px); /* Blurs the background slightly */
+      }
+      header {
+        background: gradient(
+          90deg,
+          #631d44,
+          #ff00ff
+        ); /* 90s gradient background */
+
+        padding: 20px;
+        text-align: center;
+        font-size: 2em; /* Large font size */
+        color: #000; /* Black text color for better contrast */
+      }
+
+      .marquee {
+        background: #ffcc00; /* Bright yellow marquee */
+        color: #000; /* Black text */
+        padding: 10px;
+        font-weight: bold;
+        animation: marquee 10s linear infinite; /* Scrolling effect */
+      }
+
+      aside {
+        width: 200px;
+        background: #ff00ff; /* Bright pink sidebar */
+        color: white;
+        padding: 20px;
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+      }
+
+      aside a {
+        display: block;
+        background: #00ccff; /* Bright blue buttons */
+        color: #000;
+        padding: 10px;
+        margin: 10px 0;
+        text-align: center;
+        font-weight: bold;
+        text-decoration: none;
+      }
+
+      aside a:hover {
+        background: #ffcc00; /* Hover effect */
+      }
+
+      main {
+        padding: 20px;
+        background: rgba(
+          255,
+          255,
+          255,
+          0.8
+        ); /* Semi-transparent background for content */
+        border: 5px solid #ff00ff; /* Bright border */
+      }
+
+      footer {
+        background: #00ff00; /* Bright green footer */
+        color: black;
+        padding: 10px;
+        text-align: center;
+      }
+
+      /* Marquee animation */
+      @keyframes marquee {
+        0% {
+          transform: translateX(100%);
+        }
+        100% {
+          transform: translateX(-100%);
+        }
+      }
+
+      .typewriter {
+        font-family: "Courier New", Courier, monospace; /* Monospace font for typewriter effect */
+        border-right: 2px solid #ff00ff; /* Cursor effect */
+        white-space: nowrap; /* Prevent text wrapping */
+        overflow: hidden; /* Hide overflow */
+        width: 0; /* Start with width 0 */
+        animation: typing 5s steps(30, end), blink-caret 0.75s step-end infinite; /* Typewriting and blinking cursor */
+      }
+
+      @keyframes typing {
+        from {
+          width: 0;
+        }
+        to {
+          width: 100%;
+        }
+      }
+
+      @keyframes blink-caret {
+        from,
+        to {
+          border-color: transparent;
+        }
+        50% {
+          border-color: #ff00ff;
+        }
+      }
+
+      .notification {
+        width: 300px;
+        background-color: #f0e68c; /* Light yellow background */
+        border: 2px solid #ff0000; /* Red border */
+        border-radius: 5px; /* Rounded corners */
+        padding: 10px;
+        position: relative; /* Position for the close button */
+        margin: 20px auto; /* Center the notification */
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+      }
+
+      .notification h3 {
+        margin: 0;
+        font-size: 1.2em;
+        color: #ff0000; /* Red text for the title */
+      }
+
+      .notification p {
+        margin: 5px 0;
+      }
+
+      .close-btn {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        background: #ff0000; /* Red background */
+        color: white; /* White text */
+        border: none;
+        border-radius: 3px; /* Rounded corners */
+        cursor: pointer;
+        padding: 2px 5px;
+        font-weight: bold;
+      }
+
+      .close-btn:hover {
+        background: #cc0000; /* Darker red on hover */
+      }
+
+      .notification-container {
+        display: flex; /* Use flexbox to arrange items in a row */
+        justify-content: space-around; /* Space out the notifications */
+        margin: 20px 0; /* Add some margin for spacing */
+      }
+
+      .notification {
+        flex: 1; /* Allow notifications to grow equally */
+        margin: 0 10px; /* Add margin between notifications */
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img
+        src="https://www.codedex.io/images/bot_logo_christmas.webp"
+        alt="Codédex Logo"
+        style="max-width: 100%; height: auto"
+      />
+      <h1>Welcome to Codédex!</h1>
+    </header>
+    <audio autoplay loop>
+      <source src="../codedex/assets/way-to-go-80s-90s-beat-272017.mp3" type="audio/mp3">
+      Your browser does not support the audio element.
+    </audio>
+    
+    <div class="notification-container">
+      <div class="notification">
+        <h3>Welcome to Codédex!</h3>
+        <p>Explore our exciting courses today!</p>
+      </div>
+      <div class="notification">
+        <h3>Join Our Community!</h3>
+        <p>Connect with fellow coders and share your journey!</p>
+      </div>
+      <div class="notification">
+        <h3>Special Offer!</h3>
+        <p>Sign up now and get 20% off your first course!</p>
+      </div>
+      <div class="notification">
+        <h3>Stay Updated!</h3>
+        <p>
+          Subscribe to our monthly magazine for the latest news and codemon
+          collectibles :)!
+        </p>
+      </div>
+    </div>
+
+    <div class="marquee">Welcome to Codédex - Your Adventure Awaits!</div>
+    <div class="typewriter">Learning with Richard Feynman's Techniques!</div>
+    <div class="content">
+      <aside class="left">
+        <h2>Navigation</h2>
+        <a href="#home">Home</a>
+        <a href="#courses">Courses</a>
+        <a href="#community">Community</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+      </aside>
+      <main>
+        <h2>Our Courses</h2>
+        <p>Explore our vibrant coding courses designed for all levels!</p>
+
+        <!-- Richard Feynman Learning Course -->
+        <section class="course">
+          <h3>
+            <a href="feynman-course.html"
+              >Richard Feynman Learning Techniques</a
+            >
+          </h3>
+          <p>
+            Discover the effective learning strategies of physicist Richard
+            Feynman, known for his ability to simplify complex concepts.
+          </p>
+          <h4>Course Outline:</h4>
+          <ul>
+            <li>
+              <strong>Introduction to Feynman's Techniques</strong> - Overview
+              of his approach to learning.
+            </li>
+            <li>
+              <strong>Step 1: Identify the Topic</strong> - Choose a concept you
+              want to learn.
+            </li>
+            <li>
+              <strong>Step 2: Teach It</strong> - Explain the concept in simple
+              terms as if teaching someone else.
+            </li>
+            <li>
+              <strong>Step 3: Identify Gaps</strong> - Find areas where your
+              understanding is lacking.
+            </li>
+            <li>
+              <strong>Step 4: Review and Simplify</strong> - Go back to the
+              source material and refine your understanding.
+            </li>
+            <li>
+              <strong>Step 5: Repeat</strong> - Continue the process until you
+              can explain the concept clearly.
+            </li>
+          </ul>
+          <p>
+            Join us to enhance your learning skills using Feynman's proven
+            methods!
+          </p>
+        </section>
+        <!-- End of Richard Feynman Learning Course -->
+
+        <marquee
+          behavior="scroll"
+          direction="left"
+          style="color: #ff00ff; font-weight: bold; font-size: 1.5em"
+        >
+          Check out our exciting courses on Typewriting and the 90s Internet!
+        </marquee>
+
+        <!-- Typewriting Proficiency Course -->
+        <section class="course">
+          <h3>
+            <a href="typewriterlearning.html"
+              >Mastering the Mechanical Typewriter</a
+            >
+          </h3>
+          <p>
+            Step back in time and embrace the classic art of typewriting with
+            our groovy course on mechanical typewriters! Perfect for those who
+            want to channel their inner writer and create beautiful text the
+            old-fashioned way.
+          </p>
+          <h4>Course Outline:</h4>
+          <ul>
+            <li>
+              <strong>Introduction to the Mechanical Typewriter</strong> -
+              Discover the charm and mechanics of these vintage machines.
+            </li>
+            <li>
+              <strong>Proper Hand Positioning</strong> - Learn the classic
+              finger placement for optimal typing.
+            </li>
+            <li>
+              <strong>Touch Typing Techniques</strong> - Master the skill of
+              typing without peeking at the keys!
+            </li>
+            <li>
+              <strong>Speed and Accuracy Drills</strong> - Fun exercises to
+              boost your typing speed and precision.
+            </li>
+            <li>
+              <strong>Avoiding Common Mistakes</strong> - Tips to steer clear of
+              those pesky typos.
+            </li>
+            <li>
+              <strong>Typing Tests and Progress Tracking</strong> - Keep track
+              of your progress with retro-style typing tests.
+            </li>
+          </ul>
+          <p>
+            Join us to become a typewriting whiz and unleash your creativity on
+            paper!
+          </p>
+        </section>
+        <!-- End of Typewriting Proficiency Course -->
+
+        <marquee
+          behavior="scroll"
+          direction="left"
+          style="color: #ff00ff; font-weight: bold; font-size: 1.5em"
+        >
+          Don't miss our course on Exploring the 90s Internet!
+        </marquee>
+
+        <!-- 90s Internet Course -->
+        <section class="course">
+          <h3>
+            <a href="exploring-90s-internet.html">Exploring the 90s Internet</a>
+          </h3>
+          <p>
+            Take a trip down memory lane and discover how the internet worked in
+            the 90s! This course will guide you through the basics of navigating
+            the early web, using dial-up connections, and understanding the
+            culture of online communities.
+          </p>
+          <h4>Course Outline:</h4>
+          <ul>
+            <li>
+              <strong>Introduction to the 90s Internet</strong> - Overview of
+              how the internet emerged and evolved during the 90s.
+            </li>
+            <li>
+              <strong>Dial-Up Connections</strong> - Learn how to connect to the
+              internet using dial-up and the sounds that came with it!
+            </li>
+            <li>
+              <strong>Web Browsers of the Era</strong> - Explore popular
+              browsers like Netscape Navigator and Internet Explorer.
+            </li>
+            <li>
+              <strong>Basic HTML and Web Design</strong> - Understand the
+              fundamentals of creating a simple web page.
+            </li>
+            <li>
+              <strong>Online Communities</strong> - Discover the rise of forums,
+              chat rooms, and early social media.
+            </li>
+            <li>
+              <strong>Safety and Etiquette</strong> - Learn about online safety
+              and the unwritten rules of 90s internet culture.
+            </li>
+          </ul>
+          <p>
+            Join us to relive the excitement of the early web and learn how to
+            navigate the internet like it's 1999!
+          </p>
+        </section>
+        <!-- End of 90s Internet Course -->
+      </main>
+
+    <div class="gif-container">
+      <img
+        src="https://www.codedex.io/images/character_gifs/6wYeoCS.gif"
+        alt="GIF 1"
+      />
+      <img
+        src="https://www.codedex.io/images/character_gifs/qOSmiVc.gif"
+        alt="GIF 2"
+      />
+      <img
+        src="https://media.tenor.com/VDXIz-lKR98AAAAi/aoi-asahina-danganronpa.gif"
+        alt="GIF 3"
+      />
+
+      <img
+        src="https://media.tenor.com/KfL3l_4SuVEAAAAi/mario-super-mario-world.gif"
+      />
+      />
+      <img
+        src="https://media.tenor.com/jZ5s0Gun5dAAAAAi/fuyuhiko-kuzuryuu-danganronpa.gif"
+      />
+    </div>
+    <footer>
+      © Codédex 2022-2024 - All rights reserved <br />
+      <a href="https://socialmedia.com/codedex">Follow us on Social Media</a>
+    </footer>
+    <div class="notification">
+      <button
+        class="close-btn"
+        onclick="this.parentElement.style.display='none';"
+      >
+        X
+      </button>
+      <h3>Something unfortunate just happened!</h3>
+      <p>Your life may be at risk.</p>
+      <p>Please start learning soon on CodeDex.</p>
+    </div>
+  </body>
+</html>

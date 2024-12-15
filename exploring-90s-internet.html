@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exploring the 90s Internet - Codédex</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body {
+        background-color: #f0f8ff; /* Light background */
+        font-family: "Courier New", Courier, monospace; /* Monospace font for typewriter effect */
+        color: #333; /* Dark text */
+        text-align: center; /* Centered text */
+      }
+      header {
+        background: #ffccff; /* Light pink header */
+        padding: 20px;
+        color: #000;
+        font-size: 2.5em;
+        border-bottom: 5px solid #ff00ff; /* Bright pink border */
+      }
+      .course-content {
+        margin: 20px;
+        padding: 20px;
+        border: 2px solid #ff00ff; /* Bright pink border */
+        background: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+        border-radius: 10px; /* Rounded corners */
+      }
+      .points {
+        font-size: 1.5em;
+        color: #ff00ff; /* Bright pink for points */
+      }
+      .button {
+        background: #00ccff; /* Bright blue button */
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        margin: 10px;
+        font-weight: bold;
+        border-radius: 5px; /* Rounded corners */
+      }
+      .button:hover {
+        background: #ffcc00; /* Hover effect */
+      }
+      .marquee {
+        background: #ffcc00; /* Bright yellow marquee */
+        color: #000; /* Black text */
+        padding: 10px;
+        font-weight: bold;
+        animation: marquee 10s linear infinite; /* Scrolling effect */
+      }
+      @keyframes marquee {
+        0% {
+          transform: translateX(100%);
+        }
+        100% {
+          transform: translateX(-100%);
+        }
+      }
+      h2 {
+        color: #ff00ff; /* Bright pink for section titles */
+      }
+    </style>
+  </head>
+  <body>
+    <header>Exploring the 90s Internet - Codédex</header>
+    <div class="marquee">
+      Take a trip down memory lane and discover the early web!
+    </div>
+    <div class="course-content">
+      <h2>Course Outline</h2>
+      <ul>
+        <li>Introduction to the 90s Internet</li>
+        <li>Dial-Up Connections</li>
+        <li>Popular Browsers of the Era</li>
+        <li>Basic HTML and Web Design</li>
+        <li>Online Communities and Culture</li>
+        <li>Safety and Etiquette</li>
+        <li>Final Project: Create a 90s Style Web Page!</li>
+      </ul>
+      <div class="points">Points Earned: <span id="points">0</span></div>
+      <button class="button" onclick="earnPoints()">Complete Lesson</button>
+    </div>
+
+    <div class="course-content">
+      <h2>1. Introduction to the 90s Internet</h2>
+      <p>
+        The 1990s marked the beginning of the World Wide Web as we know it
+        today. It was a time of exploration and innovation, where users began to
+        connect to the internet from their homes.
+      </p>
+      <p>
+        During this decade, the internet transformed from a niche tool used by
+        researchers to a mainstream platform for communication, information, and
+        entertainment.
+      </p>
+    </div>
+
+    <div class="course-content">
+      <h2>2. Dial-Up Connections</h2>
+      <p>
+        Dial-up connections were the primary means of accessing the internet in
+        the 90s. Users would connect their computers to a phone line using a
+        modem, which made a series of beeping sounds as it established a
+        connection.
+      </p>
+      <p>
+        While slow by today’s standards, dial-up was revolutionary at the time,
+        allowing users to browse websites, send emails, and chat online.
+      </p>
+    </div>
+
+    <div class="course-content">
+      <h2>3. Popular Browsers of the Era</h2>
+      <p>
+        Several web browsers emerged during the 90s, each contributing to the
+        growth of the internet:
+      </p>
+      <ul>
+        <li>
+          <strong>Netscape Navigator:</strong> One of the first popular web
+          browsers, known for its user-friendly interface.
+        </li>
+        <li>
+          <strong>Internet Explorer:</strong> Released by Microsoft, it quickly
+          became the dominant browser in the late 90s.
+        </li>
+        <li>
+          <strong>Opera:</strong> A lesser-known browser that introduced
+          features like tabbed browsing.
+        </li>
+      </ul>
+    </div>
+
+    <div class="course-content">
+      <h2>4. Basic HTML and Web Design</h2>
+      <p>
+        HTML (HyperText Markup Language) was the backbone of web design in the
+        90s. It allowed users to create simple web pages with text, images, and
+        links.
+      </p>
+      <p>
+        Learning basic HTML was essential for anyone looking to build a presence
+        on the web. Simple tags like <code>&lt;h1&gt;</code> for headings and
+        <code>&lt;a&gt;</code> for links were commonly used.
+      </p>
+    </div>
+
+    <div class="course-content">
+      <h2>5. Online Communities and Culture</h2>
+      <p>
+        The 90s saw the rise of online communities, where users could connect
+        with others who shared similar interests. Forums, chat rooms, and early
+        social media platforms like AOL Instant Messenger became popular.
+      </p>
+      <p>
+        These communities fostered a sense of belonging and allowed users to
+        share ideas, experiences, and creativity.
+      </p>
+    </div>
+
+    <div class="course-content">
+      <h2>6. Safety and Etiquette</h2>
+      <p>
+        As the internet grew, so did the importance of online safety and
+        etiquette. Users were encouraged to protect their personal information
+        and be respectful in online interactions.
+      </p>
+      <p>
+        Understanding the unwritten rules of online communication was crucial
+        for navigating the early web.
+      </p>
+    </div>
+
+    <div class="course-content">
+      <h2>7. Final Project: Create a 90s Style Web Page!</h2>
+      <p>
+        For your final project, create a simple web page using basic HTML.
+        Incorporate elements that reflect the 90s internet culture, such as
+        bright colors, animated GIFs, and retro fonts.
+      </p>
+      <p>Share your creation with the class for feedback!</p>
+    </div>
+
+    <footer>
+      <p>© Codédex 2022-2024 - All rights reserved</p>
+    </footer>
+    <script>
+      let points = 0;
+
+      function earnPoints() {
+        points += 10; // Earn 10 points for completing a lesson
+        document.getElementById("points").innerText = points;
+        alert("Congratulations! You've earned 10 points!");
+      }
+    </script>
+  </body>
+</html>

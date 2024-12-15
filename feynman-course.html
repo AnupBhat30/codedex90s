@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Richard Feynman Learning Techniques - Codédex</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body {
+        background-color: #f0f8ff; /* Light background */
+        font-family: "Courier New", Courier, monospace; /* Monospace font for typewriter effect */
+        color: #333; /* Dark text */
+        text-align: center; /* Centered text */
+      }
+      header {
+        background: #ffccff; /* Light pink header */
+        padding: 20px;
+        color: #000;
+        font-size: 2.5em;
+        border-bottom: 5px solid #ff00ff; /* Bright pink border */
+      }
+      .course-content {
+        margin: 20px;
+        padding: 20px;
+        border: 2px solid #ff00ff; /* Bright pink border */
+        background: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+        border-radius: 10px; /* Rounded corners */
+      }
+      .quote {
+        font-style: italic;
+        color: #ff69b4; /* Kawaii pink */
+        margin: 20px 0;
+      }
+      .points {
+        font-size: 1.5em;
+        color: #ff00ff; /* Bright pink for points */
+      }
+      .button {
+        background: #00ccff; /* Bright blue button */
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        margin: 10px;
+        font-weight: bold;
+        border-radius: 5px; /* Rounded corners */
+      }
+      .button:hover {
+        background: #ffcc00; /* Hover effect */
+      }
+      .marquee {
+        background: #ffcc00; /* Bright yellow marquee */
+        color: #000; /* Black text */
+        padding: 10px;
+        font-weight: bold;
+        animation: marquee 10s linear infinite; /* Scrolling effect */
+      }
+      @keyframes marquee {
+        0% {
+          transform: translateX(100%);
+        }
+        100% {
+          transform: translateX(-100%);
+        }
+      }
+      h2 {
+        color: #ff00ff; /* Bright pink for section titles */
+      }
+    </style>
+  </head>
+  <body>
+    <header>Richard Feynman Learning Techniques - Codédex</header>
+    <div class="marquee">
+      Unlock your learning potential with Richard Feynman's techniques!
+    </div>
+    <div class="course-content">
+      <h2>Feynman’s Philosophy</h2>
+      <p>
+        Feynman’s secret lay in understanding the true essence of a concept
+        rather than merely knowing its name, leading to his remarkable
+        achievements. This learning technique can be applied universally,
+        irrespective of the subject.
+      </p>
+      <p class="quote">
+        "The person who says he knows what he thinks but cannot express it
+        usually does not know what he thinks." - Mortimer Adler
+      </p>
+    </div>
+
+    <div class="course-content">
+      <h2>Step 1: Select a Concept and Map Your Knowledge</h2>
+      <p>
+        Start with a blank page. Write everything you know about your chosen
+        topic, using a different color pen for new information as you learn.
+        This creates a visual map of your growing understanding.
+      </p>
+    </div>
+
+    <div class="course-content">
+      <h2>Step 2: Explain It to a 12-Year-Old</h2>
+      <p>
+        Once you feel confident you understand it, try to explain the concept
+        using only simple words a child would understand. You haven’t grasped it
+        fully if you can’t explain it simply.
+      </p>
+      <p class="quote">"Complex language often masks gaps in knowledge."</p>
+      <p class="quote">
+        "Anyone can make a subject complicated but only someone who understands
+        can make it simple."
+      </p>
+    </div>
+
+    <div class="course-content">
+      <h2>Step 3: Review and Refine</h2>
+      <p>
+        Write out your explanation, then read it aloud. Clear writing reveals
+        gaps in understanding and gives poor thinking nowhere to hide.
+      </p>
+      <p>Look for:</p>
+      <ul>
+        <li>Confusing explanations</li>
+        <li>Hidden jargon</li>
+        <li>Glossed-over concepts</li>
+      </ul>
+      <p>
+        When you find weak spots, return to the source material. Study those
+        sections until you can explain them simply. Keep refining until a
+        12-year-old would understand every part.
+      </p>
+    </div>
+
+    <div class="course-content">
+      <h2>Step 4: Test and Archive</h2>
+      <p>
+        Test your understanding by teaching someone else. Note their questions
+        and points of confusion – these reveal where your explanation needs
+        work. Once satisfied, archive your simple explanation in a learning
+        binder for periodic review.
+      </p>
+    </div>
+
+    <div class="course-content">
+      <h2>Conclusion</h2>
+      <p class="quote">
+        "Simplicity reveals mastery. You’ve achieved true understanding when you
+        can strip away jargon and explain complex ideas simply."
+      </p>
+      <div class="points">Points Earned: <span id="points">0</span></div>
+      <button class="button" onclick="earnPoints()">Complete Lesson</button>
+    </div>
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/lr8sVailoLw?si=cld5HH3vz7SA3TN7"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+    <footer>
+      <p>© Codédex 2022-2024 - All rights reserved</p>
+    </footer>
+    <script>
+      let points = 0;
+
+      function earnPoints() {
+        points += 10; // Earn 10 points for completing a lesson
+        document.getElementById("points").innerText = points;
+        alert("Congratulations! You've earned 10 points!");
+      }
+    </script>
+  </body>
+</html>

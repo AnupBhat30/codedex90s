@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typewriting Course - Codédex</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body {
+        background-color: #f9f9f9; /* Light background */
+        font-family: "Courier New", Courier, monospace; /* Monospace font for typewriter effect */
+        color: #333; /* Dark text */
+        text-align: center; /* Centered text */
+      }
+      header {
+        background: #ffccff; /* Light pink header */
+        padding: 20px;
+        color: #000;
+        font-size: 2.5em;
+        border-bottom: 5px solid #ff00ff; /* Bright pink border */
+      }
+      .course-content {
+        margin: 20px;
+        padding: 20px;
+        border: 2px solid #ff00ff; /* Bright pink border */
+        background: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+        border-radius: 10px; /* Rounded corners */
+      }
+      .points {
+        font-size: 1.5em;
+        color: #ff00ff; /* Bright pink for points */
+      }
+      .button {
+        background: #00ccff; /* Bright blue button */
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        margin: 10px;
+        font-weight: bold;
+        border-radius: 5px; /* Rounded corners */
+      }
+      .button:hover {
+        background: #ffcc00; /* Hover effect */
+      }
+      .marquee {
+        background: #ffcc00; /* Bright yellow marquee */
+        color: #000; /* Black text */
+        padding: 10px;
+        font-weight: bold;
+        animation: marquee 10s linear infinite; /* Scrolling effect */
+      }
+      @keyframes marquee {
+        0% {
+          transform: translateX(100%);
+        }
+        100% {
+          transform: translateX(-100%);
+        }
+      }
+      h2 {
+        color: #ff00ff; /* Bright pink for section titles */
+      }
+      .kawaii {
+        font-size: 1.2em;
+        color: #ff69b4; /* Kawaii pink */
+      }
+    </style>
+  </head>
+  <body>
+    <header>Typewriting Course - Codédex</header>
+    <div class="marquee">
+      Welcome to the Typewriting Course! Type your way to success with kawaii
+      vibes!
+    </div>
+    <div class="course-content">
+      <h2>Course Outline</h2>
+      <ul>
+        <li>Introduction to Typewriting</li>
+        <li>Proper Hand Positioning</li>
+        <li>Touch Typing Techniques</li>
+        <li>Speed and Accuracy Drills</li>
+        <li>Typing Tests and Progress Tracking</li>
+        <li>Fun Typing Games</li>
+        <li>Final Project: Create Your Own Story!</li>
+      </ul>
+      <div class="points">Points Earned: <span id="points">0</span></div>
+      <button class="button" onclick="earnPoints()">Complete Lesson</button>
+    </div>
+
+    <div class="course-content">
+      <h2>1. Introduction to Typewriting</h2>
+      <p class="kawaii">
+        Welcome to the wonderful world of typewriting! In this section, we will
+        explore the history of typewriters and their significance in
+        communication. Typewriters were once the primary tool for writers,
+        journalists, and office workers. They allowed for faster and more
+        legible writing, paving the way for modern typing.
+      </p>
+      <p class="kawaii">
+        Did you know? The first commercially successful typewriter was invented
+        in 1873 by Christopher Latham Sholes. It was called the Sholes and
+        Glidden typewriter, and it introduced the QWERTY keyboard layout we
+        still use today!
+      </p>
+    </div>
+
+    <div class="course-content">
+      <h2>2. Proper Hand Positioning</h2>
+      <p class="kawaii">
+        To type efficiently, it's essential to have the correct hand
+        positioning. Place your fingers on the home row keys:
+      </p>
+      <ul>
+        <li>Left Hand: A, S, D, F</li>
+        <li>Right Hand: J, K, L, ;</li>
+      </ul>
+      <p class="kawaii">
+        Your thumbs should rest on the space bar. This position allows for quick
+        access to all keys while maintaining comfort.
+      </p>
+    </div>
+
+    <div class="course-content">
+      <h2>3. Touch Typing Techniques</h2>
+      <p class="kawaii">
+        Touch typing is the ability to type without looking at the keyboard.
+        Here are some tips to master this skill:
+      </p>
+      <ol>
+        <li>Practice regularly to build muscle memory.</li>
+        <li>Use all your fingers to increase speed.</li>
+        <li>Keep your eyes on the screen, not the keyboard.</li>
+      </ol>
+      <p class="kawaii">
+        With practice, you'll be able to type faster and more accurately!
+      </p>
+    </div>
+
+    <div class="course-content">
+      <h2>4. Speed and Accuracy Drills</h2>
+      <p class="kawaii">
+        To improve your typing speed and accuracy, try these drills:
+      </p>
+      <ul>
+        <li>Type the alphabet as fast as you can.</li>
+        <li>Practice typing common words and phrases.</li>
+        <li>Use online typing tests to track your progress.</li>
+      </ul>
+      <p class="kawaii">
+        Remember, consistency is key! Set aside time each day to practice.
+      </p>
+    </div>
+
+    <div class="course-content">
+      <h2>5. Fun Typing Games</h2>
+      <p class="kawaii">
+        Make learning fun with typing games! Here are a few you can try:
+      </p>
+      <ul>
+        <li>
+          <strong>Type Racer:</strong> Compete with friends to see who can type
+          a passage the fastest!
+        </li>
+        <li>
+          <strong>Typing.com:</strong> Offers various typing exercises and
+          games.
+        </li>
+        <li>
+          <strong>Nitrotype:</strong> A fun racing game that tests your typing
+          speed.
+        </li>
+      </ul>
+    </div>
+
+    <div class="course-content">
+      <h2>6. Final Project: Create Your Own Story!</h2>
+      <p class="kawaii">
+        For your final project, write a short story using the skills you've
+        learned! Focus on typing without looking at the keyboard and try to
+        incorporate as many new words as possible. Share your story with the
+        class for feedback!
+      </p>
+    </div>
+
+    <footer>
+      <p>© Codédex 2022-2024 - All rights reserved</p>
+    </footer>
+    <script>
+      let points = 0;
+
+      function earnPoints() {
+        points += 10; // Earn 10 points for completing a lesson
+        document.getElementById("points").innerText = points;
+        alert("Congratulations! You've earned 10 points!");
+      }
+    </script>
+  </body>
+</html>
